@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .error{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .error.e404{
+            background: url("/assets/img/404.png") no-repeat center/cover;
+        }
+        .error.e500{
+            background: url("/assets/img/500.png") no-repeat center/cover;
+        }
+    </style>
+</head>
+<body>
+   <div class="error {{status===404?'e404':'e500'}}"></div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{{extend './basic.art'}}
+
+{{block 'body'}}
+    {{include '../compoents/header.art'}}
+    {{block 'content'}}{{/block}}
+    {{include '../compoents/footer.art'}}
+{{/block}}
+
+
+<!-- 该页面是给需要头部尾部的页面使用的 -->
